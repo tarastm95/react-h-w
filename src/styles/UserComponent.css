@@ -1,0 +1,30 @@
+.User {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.User .user-info {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.User button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.User button:hover {
+    background-color: #0056b3;
+}

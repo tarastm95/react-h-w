@@ -1,0 +1,9 @@
+.Users {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.Users .User {
+    width: 100%;
+    max-width: 400px;
+}
