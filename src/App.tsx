@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import InputComponent from './components/InputComponent';
+import UsePreviousComponent from './components/usePreviousComponent';
 
-function App() {
-  return (
-    <div className="App">
-     React-app-ppp
-    </div>
-  );
-}
+
+const App: React.FC = () => {
+    return (
+        <div>
+            <InputComponent />
+            <UsePreviousComponent />
+        </div>
+    );
+};
 
 export default App;
