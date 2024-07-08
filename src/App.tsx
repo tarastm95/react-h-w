@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import PostForm from './components/PostForm';
 
-function App() {
-  return (
-    <div className="App">
-     React-app
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <h1>Створити пост</h1>
+            <PostForm />
+        </div>
+    );
+};
 
 export default App;
