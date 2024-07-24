@@ -5,6 +5,7 @@ import './Users.css';
 import {NavLink} from "react-router-dom";
 import {Simulate} from "react-dom/test-utils";
 import error = Simulate.error;
+
 const Users: React.FC = () => {
     const [users, setUsers] = useState<UserTypes[]>([]);
     useEffect(() => {
@@ -13,7 +14,7 @@ const Users: React.FC = () => {
                 console.log(response);
                 setUsers(response.data);
             })
-            .catch((error)=>{
+            .catch((error) => {
                 console.log(error);
             })
     }, [])
@@ -21,11 +22,11 @@ const Users: React.FC = () => {
         <div>
             <div>
                 {users.map((user) => (
-                    <div key={user.id} className="user" >
-                        <span>{user.id}</span>
-                        <span>{user.name}</span>
-                        <span>{user.username}</span>
-                        <span>{user.email}</span>
+                    <div key={user.id} className="user">
+                        <span><strong>id:</strong> {user.id}</span>
+                        <span> <strong>name:</strong> {user.name}</span>
+                        <span> <strong>username:</strong> {user.username}</span>
+                        <span><strong>email</strong> {user.email}</span>
                         <NavLink to={`${user.id}/posts`}>Show posts {user.id}</NavLink>
                     </div>
                 ))}

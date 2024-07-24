@@ -1,11 +1,8 @@
-import React from 'react';
-
-const CommentTypes = () => {
-    return (
-        <div>
-
-        </div>
-    );
-};
-
-export default CommentTypes;
+ interface commentTypes {
+    postId:number,
+    id:number,
+    name: string,
+    email: string,
+    body:string
+}
+ export default commentTypes;
